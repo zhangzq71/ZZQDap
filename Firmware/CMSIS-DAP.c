@@ -10,7 +10,7 @@
 #include "usb_config.c"
 
 #include "DAP_config.h"
-#include "..\DAP.h"
+#include "DAP\DAP.h"
 
 #include "usbd_user_cdc_acm.h"
 

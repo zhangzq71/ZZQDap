@@ -7,7 +7,7 @@
 #include "usb_config.c"
 
 #include "DAP_config.h"
-#include "..\DAP.h"
+#include "DAP\DAP.h"
 
 #if (USBD_HID_OUTREPORT_MAX_SZ != DAP_PACKET_SIZE)
 	#error "USB HID Output Report Size must match DAP Packet Size"

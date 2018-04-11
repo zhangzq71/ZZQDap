@@ -2,7 +2,7 @@
 #define __DAP_CODE_C__
 
 #include "DAP_config.h"
-#include "../DAP.h"
+#include "DAP/DAP.h"
 
 void UserAppInit(CoreDescriptor_t *core);
 void UserAppAbort(void);
@@ -27,8 +27,8 @@ void UserAppAbort(void)
 	DAP_TransferAbort = 1;
 }
 
-#include "..\DAP.c"
-#include "..\SW_DP.c"
-#include "..\JTAG_DP.c"
+#include "DAP\DAP.c"
+#include "DAP\SW_DP.c"
+#include "DAP\JTAG_DP.c"
 
 #endif
